@@ -1,0 +1,17 @@
+.app__hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: calc( 90vh - 75px );
+    align-items: center;
+
+    .hero-text {
+        .title {
+            margin-bottom: 0.5em;
+            font-size: 40px;
+        }
+
+        .description {
+            font-weight: 300;
+        }
+    }
+}

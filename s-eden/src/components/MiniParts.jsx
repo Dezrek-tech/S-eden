@@ -10,3 +10,11 @@ export const AppLogo = () => {
         </div>
    )
 }
+
+export const AppButton = (props) => {
+    return (
+        <button className="app__button" onClick={props.onclick}>
+            {props.children}
+        </button>
+    )
+}

@@ -8,6 +8,14 @@
     font-family: poppins;
 }
 
+#root {
+    padding-top: 75px;
+}
+
 .app__header {
-    @import 'components/Nav';
+    & > * { 
+        padding: 0.5em var(--default-margin);
+    }
+
+    @import 'components/Nav', 'components/Hero';
 }

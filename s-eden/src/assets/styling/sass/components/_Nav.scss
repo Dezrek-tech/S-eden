@@ -11,8 +11,8 @@
     .left {
         width: 20%;
 
-        .app-logo {
-            background: red;
+        .app__logo {
+            margin-right: auto;
         }
     }
 
@@ -50,3 +50,6 @@
 
         .mobile-nav-controller {
             display: none;
+        }
+    }
+}
