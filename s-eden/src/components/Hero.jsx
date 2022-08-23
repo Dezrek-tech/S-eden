@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { AppButton } from "./MiniParts.jsx"
+import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/solid'
 
 const Hero = () => {
     return (
@@ -17,6 +18,9 @@ const Hero = () => {
                     <div className="action">
                         <AppButton>
                             Send a message
+                            <div className="icon">
+                                <ChatBubbleBottomCenterTextIcon />
+                            </div>
                         </AppButton>
                     </div>
 

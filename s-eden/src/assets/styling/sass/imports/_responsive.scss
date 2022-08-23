@@ -25,6 +25,9 @@
                 width: 100%;
                 justify-content: flex-start;
                 color: #ffffff !important;
+                font-size: 16px !important;
+                font-weight: bold !important;
+                padding: 0.3em 1em !important;
 
                 &.active,
                 &:hover {
@@ -74,5 +77,23 @@
         }
     }
 
-    
+    .app__hero {
+        grid-template-columns: 100% !important;
+
+        .left {
+            .hero-text {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .action {
+                    .app__button {
+                        font-size: 17px;
+                        margin: auto;
+                        
+                    }
+                }
+            }
+        }
+    }
 }

@@ -13,7 +13,7 @@ export const AppLogo = () => {
 
 export const AppButton = (props) => {
     return (
-        <button className="app__button" onClick={props.onclick}>
+        <button className="app__button flat-centered" onClick={props.onclick}>
             {props.children}
         </button>
     )

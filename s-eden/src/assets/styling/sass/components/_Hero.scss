@@ -5,13 +5,31 @@
     align-items: center;
 
     .hero-text {
+        * {
+            margin: 0.25em 0;
+        }
         .title {
-            margin-bottom: 0.5em;
             font-size: 40px;
         }
 
         .description {
             font-weight: 300;
+        }
+
+        .action {
+            margin-top: 1em;
+
+            .app__button {
+                padding: 1em 1.5em;
+
+                .icon {
+                    height: 17px;
+                    width: 17px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.5em;
+                }
+            }
         }
     }
 }

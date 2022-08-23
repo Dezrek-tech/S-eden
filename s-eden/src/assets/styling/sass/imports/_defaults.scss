@@ -16,7 +16,8 @@
 }
 
 .app__button {
-    border-radius: 5px;
+    display: flex;
+    border-radius: 50px;
     background: $accent_color;
     color: #ffffff;
     border: none;
@@ -26,6 +27,11 @@
 
 .app__button:active {
     box-shadow: 0px 0px 0px 4px $accent_color_opaque;
+    transform: scale(0.97);
+}
+
+.icon {
+    height: auto;
 }
 
 .icon svg{
