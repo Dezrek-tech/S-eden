@@ -1,0 +1,21 @@
+.flat-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flat-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__logo {
+    display: flex;
+    font-weight: 700;
+}
+
+.icon svg{
+    width:100% !important;
+    height: 100% !important;
+}

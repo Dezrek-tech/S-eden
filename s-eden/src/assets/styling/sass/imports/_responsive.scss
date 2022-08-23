@@ -1,0 +1,78 @@
+@media ( max-width: 670px ) {
+    :root {
+        --default-margin: 5em;
+    }
+}
+
+@media ( max-width: $mobile_max-width ) {
+    :root {
+        --default-margin: 3em;
+    }
+
+    .app__nav {
+        .nav-items {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: $accent_color;
+            padding: 1em 0.5em !important;
+            border-radius: 5px;
+            flex-direction: column;
+            margin: 70px 2em 0em 0em;
+            transition: transform 0.4s;
+
+            .item {
+                width: 100%;
+                justify-content: flex-start;
+                color: #ffffff;
+
+                &.active,
+                &:hover {
+                    font-weight: bold;
+                    transform: scale(1.08);
+                    color: #000000 !important;
+                }
+            }
+        }
+
+        .mobile-nav-controller {
+            width: 40px;
+            height: 40px;
+            padding: 0.3em;
+            display: flex !important;
+
+            * {
+                width: 0%;
+                height: 100%;
+                overflow: hidden;
+                transition: width 0.4s;
+            }
+        }
+
+        &.active {
+            .mobile-nav-controller {
+                .close {
+                    width: 100%;
+                }
+            }
+
+            .nav-items {
+                transform: translateX(0) scale(1);
+            }
+        }
+    
+        &.inactive {
+            .mobile-nav-controller {
+                .open {
+                    width: 100%
+                }
+            }
+
+            .nav-items {
+                transform: translateX(100%) scale(0.7);
+            }
+        }
+    }
+
+    
+}
