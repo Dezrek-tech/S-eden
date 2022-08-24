@@ -1,3 +1,15 @@
+@media (max-width: 900px) {
+    .app__hero {
+        .right {
+            .hero-art {
+                img {
+                    width: 150% !important;
+                }
+            }
+        }
+    }
+}
+
 @media ( max-width: 670px ) {
     :root {
         --default-margin: 5em;
@@ -21,6 +33,19 @@
                 }
             }
         }
+
+        .right {
+            .hero-art {
+                position: initial !important;
+
+                img {
+                    top: 0  !important;
+                    transform: none !important;
+                    left: -50% !important;
+                    opacity: 0.1;
+                }
+            }
+        }
     }
 }
 
@@ -40,6 +65,7 @@
             flex-direction: column;
             margin: 70px 2em 0em 0em;
             transition: transform 0.4s;
+            z-index: 1;
 
             .item {
                 width: 100%;
@@ -98,14 +124,20 @@
     }
 
     .app__hero {
-        .title {
-            font-size: 30px !important;
-        }
+        position: relative;
+        z-index: -1;
 
-        .action {
-            .app__button {
-                font-size: 14px !important;
+        .left {
+            .title {
+                font-size: 30px !important;
+            }
+    
+            .action {
+                .app__button {
+                    font-size: 14px !important;
+                }
             }
         }
+
     }
 }

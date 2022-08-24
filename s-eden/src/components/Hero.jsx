@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { AppButton } from "./MiniParts.jsx"
+import  HeroArt  from "../assets/images/hero-art.png"
 import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/solid'
 
 const Hero = () => {
@@ -27,7 +28,9 @@ const Hero = () => {
                 </div>
             </div>
             <div className="right">
-
+                <div className="hero-art">
+                    <img src={HeroArt} alt="" />
+                </div>
             </div>
         </div>
     )
