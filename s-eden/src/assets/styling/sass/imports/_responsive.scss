@@ -2,6 +2,26 @@
     :root {
         --default-margin: 5em;
     }
+
+    .app__hero {
+        grid-template-columns: 100% !important;
+
+        .left {
+            .hero-text {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .action {
+                    .app__button {
+                        font-size: 17px;
+                        margin: auto;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media ( max-width: $mobile_max-width ) {
@@ -78,21 +98,13 @@
     }
 
     .app__hero {
-        grid-template-columns: 100% !important;
+        .title {
+            font-size: 30px !important;
+        }
 
-        .left {
-            .hero-text {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-
-                .action {
-                    .app__button {
-                        font-size: 17px;
-                        margin: auto;
-                        
-                    }
-                }
+        .action {
+            .app__button {
+                font-size: 14px !important;
             }
         }
     }

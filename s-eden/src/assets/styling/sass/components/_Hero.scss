@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 60% 40%;
     height: calc( 90vh - 75px );
+    max-height: 700px;
     align-items: center;
 
     .hero-text {
@@ -17,7 +18,7 @@
         }
 
         .action {
-            margin-top: 1em;
+            margin-top: 1.7em;
 
             .app__button {
                 padding: 1em 1.5em;
