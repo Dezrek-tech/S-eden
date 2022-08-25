@@ -18,7 +18,7 @@ const Hero = () => {
 
                     <div className="action">
                         <AppButton>
-                            Send a message
+                            Send a Message
                             <div className="icon">
                                 <ChatBubbleBottomCenterTextIcon />
                             </div>

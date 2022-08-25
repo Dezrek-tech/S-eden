@@ -1,0 +1,56 @@
+.app__portfolio {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            width: 22%;
+            height: 350px;
+            overflow: hidden; 
+            display: grid;
+            grid-template-rows: 70% 30%;
+            border-radius: 20px;
+            transition: background 0.4s;
+            padding: 0.5em;
+
+            &:hover {
+                background: $accent_color;
+
+                .info {
+                    * {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .image {
+                background: #ffffff;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .info {
+                text-align: center;
+                flex-direction: column;
+
+                .title {
+                    text-transform: capitalize;
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+
+                .description {
+                    font-weight: 300;
+                    opacity: 0.7;
+                }
+            }
+
+            
+        }
+    }
+}

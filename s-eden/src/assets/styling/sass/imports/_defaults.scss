@@ -1,40 +1,97 @@
-.flat-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.App {
+    .flat-centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flat-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .bg-pattern {
+        position: fixed;
+        top: 50%;
+        left: -50%;
+        width: 100%;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    .app__logo {
+        display: flex;
+        font-weight: 700;
+    }
+    
+    .app__button {
+        display: flex;
+        border-radius: 50px;
+        background: $accent_color;
+        color: #ffffff;
+        border: none;
+        padding: 0.5em;
+        font-size: 15px;
+    }
+    
+    .app__button:active,
+    .app__button:hover {
+        box-shadow: 0px 0px 0px 4px $accent_color_opaque;
+        transform: scale(0.97);
+    }
+    
+    .icon {
+        height: auto;
+    }
+    
+    .icon svg{
+        width:100% !important;
+        height: 100% !important;
+    }
+    
+    .app__title {
+        position: relative;
+    
+        .text {
+            display: flex;
+            flex-direction: column;
+    
+            .underline {
+                position: relative;
+                height: 2.5px;
+                display: grid;
+                grid-template-columns: 20% 50%;
+                grid-column-gap: 10%;
+    
+                & * {
+                    border-radius: 20px;
+                }
+    
+                .main {
+                    background: $accent_color;
+                }
+    
+                .sub {
+                    background: $accent_color_opaque;
+                }
+            }
+        }
+    }
+    
+    .app__section {
+        margin-bottom: 3em;
+        
+        .title {
+            margin-bottom: 1.5em;
+        }
 
-.flat-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.app__logo {
-    display: flex;
-    font-weight: 700;
-}
-
-.app__button {
-    display: flex;
-    border-radius: 50px;
-    background: $accent_color;
-    color: #ffffff;
-    border: none;
-    padding: 0.5em;
-    font-size: 15px;
-}
-
-.app__button:active {
-    box-shadow: 0px 0px 0px 4px $accent_color_opaque;
-    transform: scale(0.97);
-}
-
-.icon {
-    height: auto;
-}
-
-.icon svg{
-    width:100% !important;
-    height: 100% !important;
+        .content {
+            font-weight: 300;
+            p {
+                margin-bottom: 0.5em;
+            }
+        }
+    }
 }
