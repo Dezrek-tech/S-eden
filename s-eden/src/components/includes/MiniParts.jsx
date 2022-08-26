@@ -1,6 +1,7 @@
 import AppConfig from "./AppConfig.jsx";
 import Pattern from "../../assets/images/pattern.png";
 import { useState } from "react";
+import "smooth-scroll"
 
 export const BgPattern = () => {
   return <img src={Pattern} alt="pattern" className="bg-pattern" />;
@@ -9,17 +10,27 @@ export const BgPattern = () => {
 export const AppLogo = () => {
   return (
     <div className="app__logo flat-centered">
-      <img className="image" src="" alt="" />
+      <img className="image" src="./images/logo-image.png" alt="" />
       <span className="text">{AppConfig.app_name}</span>
     </div>
   );
 };
 
+export const NavItem = (props) => {
+  return (
+    <a data-scroll className="item" href={`#${props.itemKey}`}>
+      {props.children}
+    </a>
+  )
+}
+
 export const AppButton = (props) => {
   return (
-    <button className="app__button flat-centered" onClick={props.onclick}>
-      {props.children}
-    </button>
+    <a className="button_wrapper" href={props.url || "#"}>
+      <button className="app__button flat-centered" onClick={props.onclick}>
+        {props.children}
+      </button>
+    </a>
   );
 };
 

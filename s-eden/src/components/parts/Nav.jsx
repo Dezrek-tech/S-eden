@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { AppLogo } from "../includes/MiniParts";
+import { useState } from "react"
+import { AppLogo, NavItem } from "../includes/MiniParts";
 import { Bars2Icon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 const Nav = () => {
@@ -13,15 +13,9 @@ const Nav = () => {
 
             <div className={`right flat-right `}>
                 <div className="nav-items flat-centered">
-                    <a className="item" href="#">
-                        Home
-                    </a>
-                    <a className="item" href="#">
-                        About
-                    </a>
-                    <a className="item" href="#">
-                        Contact
-                    </a>
+                    <NavItem itemKey="about"> About </NavItem>
+                    <NavItem itemKey="portfolio"> Portfolio </NavItem>
+                    <NavItem itemKey="contact"> Contact </NavItem>
                 </div>
 
                 <div className="mobile-nav-controller flat-centered">

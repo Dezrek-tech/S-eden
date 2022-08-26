@@ -1,51 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
 @import 'imports/settings', 'imports/defaults', 'imports/responsive';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: poppins;
-}
+html {
+    scroll-behavior: smooth;
 
-body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-#root {
-    padding-top: 75px;
-    max-width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
-
-    .app__title {
-        display: flex;
-
-        .icon {
-            height: 12px;
-            margin-left: 0.5em;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: poppins;
     }
-}
-
-.App {
-    & > * > * { 
-        padding: 0.5em var(--default-margin);
-    }
-
-    .app__header {
-        @import 'components/Nav', 'components/Hero';
-    }
- 
-    .app__body {
-        margin-top: 2em;
-        width: 100%;
-
-        @import 'components/About', 'components/Portfolio', 'components/contact';
-    }
-
-    @import 'components/Footer';
     
+    body {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    
+        #root {
+            padding-top: 75px;
+            max-width: 100vw;
+            height: 100%;
+            overflow-x: hidden;
+        
+            .App {
+                & > * > * { 
+                    padding: 0.5em var(--default-margin);
+                }
+            
+                .app__header {
+                    @import 'components/Nav', 'components/Hero';
+                }
+             
+                .app__body {
+                    margin-top: 2em;
+                    width: 100%;
+            
+                    @import 'components/About', 'components/Portfolio', 'components/contact';
+                }
+            
+                @import 'components/Footer';
+                
+            }
+        
+            .app__title {
+                display: flex;
+        
+                .icon {
+                    height: 12px;
+                    margin-left: 0.5em;
+                }
+            }
+        }
+    }    
 }
+
+
+

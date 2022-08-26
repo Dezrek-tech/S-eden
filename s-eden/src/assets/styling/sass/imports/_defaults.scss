@@ -1,4 +1,36 @@
 .App {
+
+    .app__to-top {
+        position: fixed;
+        z-index: 5;
+        right: 2em;
+        bottom: 2em;
+        width: 50px;
+        height: 50px !important;
+        display: flex;
+        color: #ffffff;
+        background: $accent_color;
+        box-shadow: 0px 0px 0px 5px $accent_color_opaque;
+        border-radius: 100%;
+        padding: 0.5em;
+        opacity: 0.7;
+        transition: opacity 0.4s;
+
+        &.in-active {
+            opacity: 0;
+        }
+        
+        .icon {
+            padding: 0.3em !important;
+
+            svg {
+                width: 100% !important;
+            }
+        }
+
+        
+    }
+
     .flat-centered {
         display: flex;
         justify-content: center;
@@ -24,16 +56,28 @@
     .app__logo {
         display: flex;
         font-weight: 700;
+        font-size: 21px;
+        height: 25px;
+
+        .image {
+            height: 100%;
+            margin-right: 0.5em;
+        }
     }
     
-    .app__button {
-        display: flex;
-        border-radius: 50px;
-        background: $accent_color;
-        color: #ffffff;
-        border: none;
-        padding: 0.5em;
-        font-size: 15px;
+    .button_wrapper {
+        text-decoration: none !important;
+
+        .app__button {
+            display: flex;
+            border-radius: 50px;
+            background: $accent_color;
+            color: #ffffff;
+            border: none;
+            padding: 0.5em;
+            font-size: 15px;
+            margin-right: auto;
+        }
     }
     
     .app__button:active,

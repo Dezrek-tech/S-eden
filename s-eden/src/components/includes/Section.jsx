@@ -3,7 +3,7 @@ import { AppTitle } from "./MiniParts.jsx"
 
 const Section = (props) => {
     return (
-        <div className={`app__section ${props.extraClass}`}>
+        <div className={`app__section ${props.extraClass}`} id={props.title.toLowerCase()}>
             <div className="title">
                 <AppTitle text={props.title} icon={props.icon}/>
             </div>

@@ -9,7 +9,7 @@ const Portfolio = () => {
         <Section title="Portfolio" extraClass="app__portfolio">
             <div className="cards">
                 {PortfolioData.map( data => {
-                    return <AppCard title={ data.title } description={ data.description } image={ `./images/portfolio/${ data.image }` }/>
+                    return <AppCard key={ data.title } title={ data.title } description={ data.description } image={ `./images/portfolio/${ data.image }` }/>
                 })}
             </div>
         </Section> 

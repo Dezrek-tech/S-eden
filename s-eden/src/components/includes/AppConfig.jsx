@@ -39,7 +39,7 @@ const AppConfig = {
         },
 
         address: [
-            `NO 1 Ese curtis street Ikom, Cross River State, Nigeria`,
+            `NO 1 Ese curtis street Ikomr, Cross River State, Nigeria`,
             `NO 1 Ese curtis street Ikom, Cross River State, Nigeria`
         ]
     }

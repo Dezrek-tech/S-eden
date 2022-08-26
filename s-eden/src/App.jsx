@@ -1,6 +1,8 @@
 import './assets/styling/sass/main.scss'
+import * as SmoothScroll from 'smooth-scroll'
 import { BgPattern } from './components/includes/MiniParts.jsx'
 
+import ScrollToTop from './components/parts/ScrollToTop.jsx'
 import Nav from './components/parts/Nav.jsx'
 import Hero from './components/parts/Hero.jsx'
 import About from './components/parts/About.jsx'
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
+      <div id="top-anchor"></div>
       <BgPattern />
+      <ScrollToTop />
 
       <header className="app__header">
         <Nav />
@@ -32,5 +36,7 @@ function App() {
     </div>
   )
 }
+
+new SmoothScroll('a[href*="#"]')
 
 export default App

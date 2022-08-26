@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     backdrop-filter: blur(2px);
+    z-index: 5;
 
     .left {
         width: 20%;

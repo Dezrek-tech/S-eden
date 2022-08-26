@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { AppButton } from "../includes/MiniParts.jsx"
-import  HeroArt  from "../../assets/images/hero-art.png"
-import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/solid'
+import { ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/solid'
+import HeroArt  from "../../assets/images/hero-art.png"
 import AppConfig from "../includes/AppConfig.jsx";
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                     </p>
 
                     <div className="action">
-                        <AppButton>
+                        <AppButton url={ AppConfig.socials.whatsapp.url }>
                             Send a Message
                             <div className="icon">
                                 <ChatBubbleBottomCenterTextIcon />

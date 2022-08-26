@@ -31,7 +31,7 @@ const Contact = () => {
           <h3 className="title">Address</h3>
           <ul>
             {Socials.address.map(address =>{
-              return <li><p>{address}</p></li>
+              return <li key={address}><p>{address}</p></li>
             })}
           </ul>
         </div>
