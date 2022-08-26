@@ -1,0 +1,77 @@
+.app__contact {
+    .main-content {
+        display: flex;
+
+        & > * {
+            padding-right: 0.5em;
+            width: 50%;
+            margin-bottom: 1em;
+
+            .title {
+                margin-bottom: 0.5em;
+                font-weight: 400;
+            }
+        }
+
+        .social-section {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                justify-content: flex-start !important;
+                padding: 0.5em 0;
+                margin-bottom: 1em;
+                text-decoration: none;
+
+                .icon {
+                    font-size: 27px;
+                    margin-right: 0.5em;
+                    display: flex;
+                    align-items: center;
+
+                    .la-facebook-messenger {
+                        color: rgb(13, 79, 201);
+                    }
+
+                    .la-whatsapp {
+                        color: rgb(5, 209, 97);
+                    }
+
+                    .la-at {
+                        color: rgb(236, 0, 79);
+                    }
+                }
+
+                .text {
+                    font-weight: 300;
+                    opacity: 0.7;
+                    font-size: 15px;
+                    color: #000000;
+                }
+            }
+        }
+
+        .address-section {
+
+            ul {
+                transform: translateX(1em);
+
+                p {
+                    font-weight: 300;
+                    opacity: 0.5;
+    
+                    b {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            * {
+                overflow-wrap: break-word;
+                word-wrap: wrap;
+                width: 100%;
+                
+            }
+        }
+    }
+}

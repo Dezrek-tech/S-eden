@@ -1,19 +1,22 @@
 import { React, useState } from "react";
-import { AppButton } from "./MiniParts.jsx"
-import  HeroArt  from "../assets/images/hero-art.png"
+import { AppButton } from "../includes/MiniParts.jsx"
+import  HeroArt  from "../../assets/images/hero-art.png"
 import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/solid'
+import AppConfig from "../includes/AppConfig.jsx";
 
 const Hero = () => {
+    const HeroData = AppConfig.hero
+
     return (
         <div className="app__hero">
             <div className="left">
                 <div className="hero-text">
                     <h2 className="title">
-                        Lorem, ipsum dolor sit amet.
+                        {HeroData.title}
                     </h2>
 
                     <p className="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptate, fugit officiis optio nesciunt temporibus alias iure numquam aliquid voluptatum animi atque, possimus velit similique quas eius unde explicabo omnis.
+                        {HeroData.description}
                     </p>
 
                     <div className="action">

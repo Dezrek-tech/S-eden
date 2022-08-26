@@ -17,7 +17,7 @@
         left: -50%;
         width: 100%;
         transform: translateY(-50%);
-        opacity: 0.5;
+        opacity: 0.35;
         z-index: -1;
     }
     
@@ -82,9 +82,14 @@
     
     .app__section {
         margin-bottom: 3em;
+        width: 100%;
+
+        & > * {
+            width: 100%;
+        }
         
         .title {
-            margin-bottom: 1.5em;
+            margin-bottom: 3em;
         }
 
         .content {

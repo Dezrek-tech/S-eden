@@ -1,12 +1,12 @@
 import './assets/styling/sass/main.scss'
-import { BgPattern } from './components/MiniParts.jsx'
+import { BgPattern } from './components/includes/MiniParts.jsx'
 
-import Nav from './components/Nav.jsx'
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
-import Portfolio from './components/Portfolio.jsx'
-import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx'
+import Nav from './components/parts/Nav.jsx'
+import Hero from './components/parts/Hero.jsx'
+import About from './components/parts/About.jsx'
+import Portfolio from './components/parts/Portfolio.jsx'
+import Contact from './components/parts/Contact.jsx'
+import Footer from './components/parts/Footer.jsx'
 
 function App() {
 

@@ -1,5 +1,5 @@
 import { React, useState } from "react"
-import { AppTitle } from "./MiniParts"
+import { AppTitle } from "./MiniParts.jsx"
 
 const Section = (props) => {
     return (

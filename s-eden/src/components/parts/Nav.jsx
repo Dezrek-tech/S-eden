@@ -1,5 +1,5 @@
-import { React, useState } from "react";
-import { AppLogo } from "./MiniParts";
+import { useState } from "react";
+import { AppLogo } from "../includes/MiniParts";
 import { Bars2Icon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 const Nav = () => {

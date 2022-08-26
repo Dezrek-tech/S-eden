@@ -8,6 +8,16 @@
             }
         }
     }
+
+    .app__section {
+        .cards {
+            flex-wrap: wrap;
+
+            .card {
+                width: 50% !important;
+            }
+        }
+    }
 }
 
 @media ( max-width: 670px ) {
@@ -42,10 +52,37 @@
                 img {
                     top: 5%  !important;
                     transform: none !important;
-                    left: -50% !important;
+                    left: -5% !important;
                     opacity: 0.1;
                     width: 200% !important;
+                    max-width: 100vw !important;
                 }
+            }
+        }
+    }
+
+    .app__section {
+        .cards {
+            flex-direction: column;
+
+            .card {
+                width: 100% !important;
+                margin: auto !important;
+                margin-bottom: 1em !important;
+
+                .image {
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    .app__contact {
+        .main-content {
+            flex-wrap: wrap;
+
+            & > * {
+                width: 100% !important;
             }
         }
     }

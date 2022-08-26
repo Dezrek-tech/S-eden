@@ -2,7 +2,8 @@ const Footer = () => {
     return (
         <div className="app__footer">
             <span className="text">
-                S'Eden &copy; 2022 - Designed with {`<3`} by Ese curtis
+                <p>S'Eden &copy; 2022</p> 
+                <p>Designed with {`<3`} by Ese curtis</p>
             </span>
         </div>
     )
