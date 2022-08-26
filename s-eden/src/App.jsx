@@ -1,6 +1,7 @@
 import './assets/styling/sass/main.scss'
 import * as SmoothScroll from 'smooth-scroll'
 import { BgPattern } from './components/includes/MiniParts.jsx'
+import { useState, useEffect } from 'react'
 
 import ScrollToTop from './components/parts/ScrollToTop.jsx'
 import Nav from './components/parts/Nav.jsx'
@@ -11,9 +12,14 @@ import Contact from './components/parts/Contact.jsx'
 import Footer from './components/parts/Footer.jsx'
 
 function App() {
+  const [Loaded, setLoaded] = useState('')
+
+  useEffect(()=> {
+    setLoaded('loaded')
+  })
 
   return (
-    <div className="App">
+    <div className={`App ${Loaded}`}>
       <div id="top-anchor"></div>
       <BgPattern />
       <ScrollToTop />
