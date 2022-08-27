@@ -19,8 +19,8 @@ function App() {
   })
 
   return (
+    <span id="top-anchor"></span>
     <div className={`App ${Loaded}`}>
-      <div id="top-anchor"></div>
       <BgPattern />
       <ScrollToTop />
 
